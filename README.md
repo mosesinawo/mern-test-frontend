@@ -4,4 +4,6 @@
 2. Run `npm install` to install all dependencies
 3. Run `npm run dev` to get the app running
 
+Note: Ensure the backend server is running to avoid issues
+
  
