@@ -1,6 +1,7 @@
 import { FaEdit, FaCheckDouble, FaRegTrashAlt } from "react-icons/fa";
+import "./task.css"
 
-interface ITask{
+export interface ITask{
   _id: string;
   title: string;
   completed: boolean;
@@ -9,7 +10,7 @@ interface ITask{
  
 }
 
-interface TaskProps{
+export interface TaskProps{
   task:ITask;
   index: number;
   deleteTask: (taskId: string) => void;
@@ -19,7 +20,7 @@ interface TaskProps{
 }
 
 
-const Task = ({ task, index, deleteTask, getSingleTask, setToComplete }:TaskProps) => {
+export const Task = ({ task, index, deleteTask, getSingleTask, setToComplete }:TaskProps) => {
   return (
     <div className={task.completed ? "task completed" : "task"}>
       <p>
@@ -35,4 +36,4 @@ const Task = ({ task, index, deleteTask, getSingleTask, setToComplete }:TaskProp
   );
 };
 
-export default Task;
+
